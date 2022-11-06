@@ -38,12 +38,12 @@ body
 }
 .container .navbar .logo 
 {
-    margin: 0 30px;
+    margin: 0 40px;
 }
 .container .navbar .logo h1
 {
     margin-right: 40px;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
 }
 .container .navbar .menu
