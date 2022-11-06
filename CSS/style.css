@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root
+{
+    
+--Almost-White: hsl(0, 0%, 98%);
+--Medium-Gray: hsl(0, 0%, 41%);
+--Almost-Black: hsl(0, 0%, 8%);
+}
+body
+{
+    position: relative;
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+}
+.container
+{
+    max-width: 1440px;
+    width: 100%; 
+    height: 100vh;
+}
+/* ===== navbar ===== */
+.container .navbar
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .navbar .logo 
+{
+    margin: 0 30px;
+}
+.container .navbar .logo h1
+{
+    margin-right: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.container .navbar .menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.container .navbar .menu ul
+{
+    display: flex;
+}
+.container .navbar .menu li
+{
+    position: relative;
+    margin: 0 20px;
+}
+.container .navbar .menu li a
+{
+    color: var(--Medium-Gray);
+    font-size: 18px;
+}
+.container .navbar .menu .list-team .list-1,
+.container .navbar .menu .list-team .list-2
+{
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--Almost-White);
+    right: 0;
+    top: 36px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.15s ease-in-out;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 10px 0 var(--Medium-Gray);
+    padding: 20px 0;
+}
+.container .navbar .menu .list-team .list-2
+{
+    left: 0;
+}
+.container .navbar .menu .list-team .list-1.active ,
+.container .navbar .menu .list-team .list-2.active 
+{
+    width: fit-content;
+    height: fit-content;
+}
+.container .navbar .menu .list-team .list-1 li,
+.container .navbar .menu .list-team .list-2 li 
+{
+    margin: 10px 25px;
+}
+.container .navbar .menu .list-team .list-1 li a,
+.container .navbar .menu .list-team .list-2 li a
+{
+    width: max-content;
+    display: block;
+}
+.container .navbar .menu .list-team .list-1 li img
+{
+    margin-right: 15px;
+}
+.container .navbar .menu .register
+{
+    display: flex;
+    margin-right: 20px;
+}
+.container .navbar .register a
+{
+    display: block;
+    border: 2px solid var(--Medium-Gray);
+    padding: 10px 20px;
+    margin-right: 15px;
+    border-radius: 10px;
+    color: var(--Medium-Gray);
+}
+.container .navbar .register a:nth-child(1)
+{
+    border: none;
+}
+.container .navbar .btn-menu,
+.container .navbar .btn-close
+{
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+.container .navbar .btn-close
+{
+    margin-top: 20px;
+    transform: translateX(90%);
+}
+/* ===== row header ===== */
+.container .row
+{
+    display: flex;
+    height: 85vh;
+    margin: 0.5% 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .row .about-heding h1
+{
+    font-size: 70px;
+    width: 420px;
+    margin-top: 50px;
+    line-height: 1;
+}
+.container .row .about-heding p
+{
+    width: 418px;
+    color: var(--Medium-Gray);
+    line-height: 1.5;
+    margin-top: 45px;
+}
+.container .row .about-heding a
+{
+    display: block;
+    padding: 10px 20px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 10px;
+    color: var(--Almost-White);
+    background-color: var(--Almost-Black);
+    margin-top: 45px;
+}
+.container .row .about-heding a:hover
+{
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    border: 2px solid var(--Medium-Gray);
+}
+.container .row .about-heding .images
+{
+    margin-top: 40px;
+}
+.container .row .about-heding .images img
+{
+    margin-right: 15px;
+}
+.container .row .img-1
+{
+    height: 510px;
+}
+.container .row .img-2
+{
+    display: none;
+}
+@media (max-width: 1000px)
+{
+    .container .row
+    {
+        justify-content: space-evenly;
+    }
+    .container .row .about-heding .images img {
+        margin-right: 10px;
+    }
+}
+@media (max-width: 900px)
+{
+    .container .navbar .logo
+    {
+        margin: 0 20px;
+    }
+    .container .navbar .logo h1
+    {
+        margin-right: 0;
+        font-size: 40px;
+    }
+    .container .navbar .register a {
+        margin-right: 0px;
+    }
+    .container .navbar .menu li {
+        margin: 0 8px;
+    }
+    .container .row .img-1
+    {
+        height: 435px;
+    }
+    .container .row .about-heding h1
+    {
+        font-size: 50px;
+        width: 299px;
+        margin-bottom: 40px;
+    }
+    .container .row .about-heding p
+    {
+        width: 372px;
+        margin-bottom: 40px;
+    }
+    .container .row .about-heding .images
+    {
+        margin-top: 45px;
+    }
+    .container .row .about-heding .images img {
+        margin-right: 10px;
+        width: 65px;
+    }
+}
+@media (max-width: 700px)
+{
+    .container .navbar .btn-menu,
+    .container .navbar .btn-close
+    {
+        display: block;
+    }
+    .container .navbar .menu.active
+    {
+        position: fixed;
+        bottom: 0px;
+        right: 0;
+        flex-direction: column;
+        background-color: var(--Almost-White);
+        width: 60%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-end;
+        z-index: 9999; 
+        display: block;
+        transform: translate(0);
+        transition: all 0.5s ease-in-out;
+    }
+    .container .navbar .menu
+    {
+        transform: translate(0);
+        display: none;
+    }
+    .container .navbar .menu .team-ul
+    {
+        width: 100%;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .container .navbar .menu .team-ul li
+    {
+        margin: 10px 20px;
+    }
+    .container .navbar .menu .list-team .list-1,
+    .container .navbar .menu .list-team .list-2
+    {
+        position: static;
+        padding: 0;
+        margin-top: 0;
+        box-shadow: none;
+    }
+    .container .navbar .menu .register 
+    {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        margin-right: 0;
+    }
+    .container .navbar .menu .register a
+    {
+        width: 50%;
+        text-align: center;
+    }
+    .container .row {
+        flex-direction: column-reverse;
+        margin: 0;
+        justify-content: flex-end;
+    }
+    .container .row .about-heding 
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .row .about-heding h1 {
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+    .container .row .about-heding p {
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    .container .row .about-heding a
+    {
+        margin-top: 20px;
+    }
+    .container .row .about-heding .images {
+        margin: 40px;
+    }
+    .container .row .img-1 {
+        display: none;
+    }
+    .container .row .img-2
+    {
+        display: block;
+        width: 100%;
+    }
+    .shadow.active
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000000c7;
+        z-index: 999;
+        top: 0;
+        transition: all 0.5s ease;
+    }
+}
