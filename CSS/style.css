@@ -43,7 +43,7 @@ body
 .container .navbar .logo h1
 {
     margin-right: 20px;
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bold;
 }
 .container .navbar .menu
@@ -121,7 +121,7 @@ body
     margin-right: 15px;
     border-radius: 10px;
     color: var(--Medium-Gray);
-    fontsize: 15px
+    fontsize: 14px
 }
 .container .navbar .register a:nth-child(1)
 {
@@ -152,7 +152,7 @@ body
 {
     font-size: 70px;
     width: 475px;
-    margin-top: 50px;
+    margin-top: 35px;
     line-height: 1;
 }
 .container .row .about-heding p
