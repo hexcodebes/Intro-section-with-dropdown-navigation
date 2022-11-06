@@ -43,7 +43,7 @@ body
 .container .navbar .logo h1
 {
     margin-right: 20px;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
 }
 .container .navbar .menu
@@ -65,7 +65,7 @@ body
 .container .navbar .menu li a
 {
     color: var(--Medium-Gray);
-    font-size: 18px;
+    font-size: 15px;
 }
 .container .navbar .menu .list-team .list-1,
 .container .navbar .menu .list-team .list-2
@@ -121,6 +121,7 @@ body
     margin-right: 15px;
     border-radius: 10px;
     color: var(--Medium-Gray);
+    fontsize: 15px
 }
 .container .navbar .register a:nth-child(1)
 {
@@ -150,7 +151,7 @@ body
 .container .row .about-heding h1
 {
     font-size: 70px;
-    width: 420px;
+    width: 475px;
     margin-top: 50px;
     line-height: 1;
 }
